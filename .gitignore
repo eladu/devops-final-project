@@ -1,0 +1,19 @@
+# Terraform Binary and State Files (CRITICAL)
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+terraform.tfstate.d/
+
+# Credentials and Keys
+*.pem
+*.key
+
+# Local IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+
+# Python virtual environment
+venv/
+__pycache__/

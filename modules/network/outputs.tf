@@ -1,0 +1,15 @@
+# The network module outputs these values back to the root configuration.
+output "vpc_id" {
+  description = "The ID of the main VPC."
+  value       = aws_vpc.main.id
+}
+
+output "public_subnet_id" {
+  description = "The ID of the public subnet."
+  value       = aws_subnet.public.id
+}
+
+output "private_subnet_id" {
+  description = "The ID of the private subnet."
+  value       = aws_subnet.private.id
+}
